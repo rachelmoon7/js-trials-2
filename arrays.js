@@ -7,6 +7,7 @@ function printIndices(items) {
   }
 }
 
+
 // 2. everyOtherItem
 function everyOtherItem(items) {
   let result = [];
@@ -23,6 +24,6 @@ function everyOtherItem(items) {
 function smallestNItems(items, n) {
   let sortedItems = items.sort(function(a, b){return a-b})
   let sortedNnItems = sortedItems.slice(0, n)
-  sortedNnItems.reverse(function(a, b){return b-a})
+  sortedNnItems.reverse()
   console.log(sortedNnItems)
 }
